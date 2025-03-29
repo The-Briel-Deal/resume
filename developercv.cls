@@ -36,6 +36,8 @@
 
 \usepackage[hidelinks]{hyperref} % Required for links but hide the default boxes around links
 
+\usepackage{enumitem}
+
 \newcommand{\lorem}{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. } % Dummy text
 
 \pagestyle{empty} % Suppress all headers or footers

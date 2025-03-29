@@ -83,36 +83,7 @@
 
 \cvsect{Who Am I?}
 
-\begin{minipage}[t]{0.4\textwidth} % Left column with the
-  % introduction text, change the width as needed
-  \vspace{-\baselineskip} % Required for vertically aligning minipages
-
-  \lorem \lorem \lorem \lorem \lorem\\ % Dummy text
-\end{minipage}
-\hfill % Automatic horizontal whitespace
-\begin{minipage}[t]{0.5\textwidth} % Right column with the skills bar
-  % chart, change the width as needed
-  \vspace{-\baselineskip} % Required for vertically aligning minipages
-
-  \begin{barchart}{5.5} % The parameter to the barchart environment
-    % is the maximum width (in cm) of the longest bar
-    \baritem{JavaScript}{60}
-    \baritem{PHP}{100}
-    \baritem{SASS/LESS}{70}
-    \baritem{Bootstrap}{70}
-    \baritem{Git}{40}
-    \baritem{LaTeX}{60}
-  \end{barchart}
-\end{minipage}
-
-% Output a series of bubbles showing your proficiency with
-% environments and/or tools
-% \begin{center}
-%  \bubbles{5/Eclipse, 6/git, 4/Office, 3/Inkscape, 3/Blender} % Each
-% bubble must be in the format of '<size>/<label>' and you can
-% specify as many bubbles as will fit on the page
-% \end{center}
-
+A
 %----------------------------------------------------------------------------------------
 %  EXPERIENCE
 %----------------------------------------------------------------------------------------
@@ -124,25 +95,40 @@
   {2023 -- Present}
   {Software Engineer -- Google Security Operations}
   {Google}
-  {Worked on a small team developing an incident response tool to collect,
-    parse, and ingest security artifacts into Google SecOps for security
-    analysts to investigate security incidents in customer environments. To do
-    this we forked and contributed to a few Google-made open source tools:
-    namely \href{https://github.com/google/grr}{GRR},
-    \href{https://github.com/google/fleetspeak}{Fleetspeak}, and
-    \href{https://github.com/log2timeline/plaso}{Plaso}.
+  {
 
-		Led a project building an end-to-end testing platform for our services,
-		ensuring that collection, parsing, and ingestion worked as expected. This
-		project prevented dozens of bugs and regressions from making it into a
-		release.
+    Our team developing an incident response tool to collect,
+    parse, and ingest security artifacts into Google SecOps for security
+    analysts to investigate security incidents in customer environments.
+
+    \begin{itemize}[leftmargin=\parindent, leftmargin=*]
+
+      \item
+        Led a project building an end-to-end testing platform for our services,
+        ensuring that collection, parsing, and ingestion worked as
+        expected. This
+        project prevented dozens of bugs and regressions from making it into a
+        release.
+    \end{itemize}
 
   \texttt{Rust}\slashsep\texttt{Golang}\slashsep\texttt{Python}}
   \entry
   {2022 -- 2023}
   {Software Engineer -- Amazon Prime Video}
   {Amazon}
-  {\lorem\lorem\\ \texttt{PHP}\slashsep\texttt{JS}\slashsep\texttt{MariaDB}\slashsep\texttt{Linux}}
+  {
+    \begin{itemize}[leftmargin=\parindent, leftmargin=*]
+      \item Designed, developed, implemented, tested, and documented
+        performant and reliable code.
+      \item Responsible for scaling up and down our services during
+        large events like Thursday Night Football and was the single
+        point of contact for the two services.
+      \item Responsible for handling on call responsibilities and
+        ensuring there are no operational problems with any of our
+        services for a week at a time.
+    \end{itemize}
+
+  \texttt{PHP}\slashsep\texttt{JS}\slashsep\texttt{MariaDB}\slashsep\texttt{Linux}}
   \entry
   {2013 -- 2014\\\footnotesize{part time}}
   {Junior PHP Developer}
