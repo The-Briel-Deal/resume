@@ -161,4 +161,24 @@
   \texttt{Kotlin}\slashsep\texttt{Python}\slashsep\texttt{AWS}}
 \end{entrylist}
 
+\cvsect{Projects}
+
+\begin{entrylist}
+  \entry
+  {2025 -- Present}
+  {GFGB}
+  {GameBoy Emulator}
+  {
+    Designed and implemented a \textbf{GameBoy (DMG) emulator, disassembler, and debugger in C/C++} using only SDL and Dear ImGui as libraries for the rendering and the debug UI respectively.
+
+    \begin{itemize}[leftmargin=\parindent, leftmargin=*]
+      \item Built core emulation of the \textbf{GB-Z80 CPU, memory bus, and PPU} to correctly interpret and execute GameBoy ROMs.
+      \item Developed accurate instruction decoding and cycle-accurate stepping logic to mirror hardware execution flow.
+      \item Integrated **test harnesses and pytest-driven unit tests** to validate correctness of opcodes and stepping behavior against known fixtures.
+      \item Structured the codebase for extensibility, including meson build integration and Python bindings for testing.
+    \end{itemize}
+
+  \texttt{C/C++}\slashsep\texttt{GB-Z80 Assembly}\slashsep\texttt{Cython}}
+\end{entrylist}
+
 \end{document}
