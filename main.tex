@@ -169,13 +169,23 @@
   {GFGB}
   {GameBoy Emulator}
   {
-    Designed and implemented a \textbf{GameBoy (DMG) emulator, disassembler, and debugger in C/C++} using only SDL and Dear ImGui as libraries for the rendering and the debug UI respectively.
+    Designed and implemented a \textbf{GameBoy (DMG) emulator, disassembler,
+    and debugger in C/C++} using only SDL and Dear ImGui as libraries for the
+    rendering and the debug UI respectively.
 
     \begin{itemize}[leftmargin=\parindent, leftmargin=*]
-      \item Built core emulation of the \textbf{GB-Z80 CPU, memory bus, and PPU} to correctly interpret and execute GameBoy ROMs.
-      \item Developed accurate instruction decoding and cycle-accurate stepping logic to mirror hardware execution flow.
-      \item Integrated **test harnesses and pytest-driven unit tests** to validate correctness of opcodes and stepping behavior against known fixtures.
-      \item Structured the codebase for extensibility, including meson build integration and Python bindings for testing.
+      \item Built core emulation of the \textbf{GB-Z80 CPU, memory bus, PPU,
+        Hardware IO registers, and more} to correctly interpret and execute
+        GameBoy ROMs.
+      \item Built a python extension package which wraps the emulator's api so
+        that I can programatically test with pytest.
+      \item Passes entire
+        \href{https://github.com/SingleStepTests/sm83}{\ul{\textbf{GBZ80
+        SingleStepTest suite}}},
+        \href{https://gbdev.gg8.se/files/roms/blargg-gb-tests/}{\ul{\textbf{Blargg's
+        CPU and Timing test suite}}}, and
+        \href{https://github.com/mattcurrie/dmg-acid2}{\ul{\textbf{the
+        DMG-ACID2 PPU test with perfect accuracy}}}.
     \end{itemize}
 
   \texttt{C/C++}\slashsep\texttt{GB-Z80 Assembly}\slashsep\texttt{Cython}}
